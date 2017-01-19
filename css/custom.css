@@ -10,17 +10,21 @@
   font-style: normal; }
 
 body,
-.navbar-default,
-.navbar-brand{
+.navbar-default{
 	background-color: #000;
 	color: #eac67a;
 	font-family: "exo";
-
+	border: none;
+}
+.navbar-default,
+.navbar-brand{
+	color: #eac67a;
 }
 .jumbotron{
 	background-image: url("../grafik/city_ljus.jpg");
 	background-size: 100%;
 	background-position: center center;
+	margin-top: 3em;
 }
 .jumbotron p{
 	font-size: 0.9em;
