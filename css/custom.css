@@ -9,39 +9,63 @@
   font-weight: normal;
   font-style: normal; }
 
-body,
-.navbar-default{
+body{
 	background-color: #000;
 	color: #eac67a;
 	font-family: "exo";
 	border: none;
 }
-.navbar-default,
-.navbar-brand{
+.navbar-default img{
+	float:left;
+	clear:both;
+	width: 10%;
+}
+.navbar-default{
+	font-size: 1.1em;
+	background-color: rgba(35, 50, 55, 0.4);
 	color: #eac67a;
 }
-.navbar-default,
-.navbar-brand{
-	font-size: 1.1em;
-	background-color: rgba(0,0,0,0);
+.nav-justified{
+	margin-top: 1.3em;
+}
+
+.nav-justified li a{
+	margin-left: 5em;
 }
 .jumbotron{
 	background-image: url("../grafik/city_ljus.jpg");
 	background-size: 100%;
 	background-position: center center;
-	margin-top: 3em;
-}
-.jumbotron p{
-	font-size: 0.9em;
+
 }
 .jumbotron h1{
-	font-size: 3em;
+	font-size: 3.5em;
 }
 .jumbotron h1,
-.jumbotron .row div p,
 .jumbotron .row div p{
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(35, 50, 55, 0.4);
 	margin-top: 1.2em;
+	padding: 0.5em;
+	
+}
+.jumbotron .row div p{
+	font-size: 0.9em;
+}
+.projects{
+	background-color: rgba(35, 50, 55, 0.4);
+}
+.clients picture img{
+	padding: 2em;
+}
+.about{
+	background-color: rgba(35, 50, 55, 0.4);
+}
+.contact{
+	background-color: rgba(35, 50, 55, 0.4);
+	margin: 2em;
+}
+.contact-info{
+	font-size: 1.3em;
 }
 .btn-primary{
 	background-color: #984B43;
@@ -50,6 +74,16 @@ body,
   	border: none;
   	border-radius: 30%;
   	padding: 0.5em;
+}
+.navbar {
+	margin: 0;
+}
+footer{
+	font-size: 0.9em;
+	background-color: #18121e;
+}
+.foot li a{
+	margin: 0;
 }
 h1,
 h2,
@@ -72,4 +106,29 @@ label{
 a:hover{
 	color: #984B43;
 	text-decoration: none;
+}
+@media (max-width: 427px){
+	.navbar-default img{
+		width: 20%;
+	}
+	.nav-justified li{
+		float:left;
+		list-style: none;
+		
+		margin-left: 1.5em;
+	}
+	.nav-justified li a{
+		margin: 0.5em;
+		font-size: 0.8em;
+	}
+	.jumbotron h1{
+		font-size: 1.4em;
+	}
+	.jumbotron .row div p{
+		font-size: 0.7em;
+	}
+	.foot li{
+		margin-left: 0.3em;
+		margin-right: 0.3em;
+	}
 }
