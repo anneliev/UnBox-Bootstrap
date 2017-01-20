@@ -30,6 +30,15 @@ body,
 .jumbotron p{
 	font-size: 0.9em;
 }
+.jumbotron h1{
+	font-size: 3em;
+}
+.jumbotron h1,
+.jumbotron .row div p,
+.jumbotron .row div p{
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 1.2em;
+}
 .btn-primary{
 	background-color: #984B43;
   	color: #eac67a;
