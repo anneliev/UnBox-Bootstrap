@@ -85,6 +85,18 @@ footer{
 .foot li a{
 	margin: 0;
 }
+.projects picture img:hover{
+	-webkit-transition: all 1s ease;
+  	transition: all 1s ease;
+  	-webkit-transform: scale(2);
+  	transform: scale(2); 
+}
+.clients picture img:hover {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2); 
+}
 h1,
 h2,
 h3,
