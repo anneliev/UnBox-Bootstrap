@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'exo';
-  src: url("Fonts/exo-regular-webfont.woff2") format("woff2"), url("Fonts/exo-regular-webfont.woff") format("woff");
+  src: url("../Fonts/exo-regular-webfont.woff2") format("woff2"), url("../Fonts/exo-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'vollkorn';
-  src: url("Fonts/vollkorn-semibold-webfont.woff2") format("woff2"), url("Fonts/vollkorn-semibold-webfont.woff") format("woff");
+  src: url("../Fonts/vollkorn-semibold-webfont.woff2") format("woff2"), url("../Fonts/vollkorn-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -33,7 +33,7 @@ body{
 	margin-left: 5em;
 }
 .jumbotron{
-	background-image: url("../grafik/city_ljus.jpg");
+	background-image: url("../Grafik/city_ljus.jpg");
 	background-size: 100%;
 	background-position: center center;
 
