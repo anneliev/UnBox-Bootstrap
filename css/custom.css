@@ -135,6 +135,7 @@ a:hover{
 	}
 	.jumbotron h1{
 		font-size: 1.6em;
+		padding-top: 2em;
 	}
 	.jumbotron .row div p{
 		font-size: 0.9em;
@@ -145,12 +146,16 @@ a:hover{
 		margin-right: 0.3em;
 	}
 }
-@media (max-width: 769px){
+@media (min-width: 428px) and (max-width: 768px){
 	.jumbotron h1{
 		font-size: 3.1em;
 	}
 	.jumbotron .row div p{
 		font-size: 1.4em;
 		margin: 0;
+	}
+	.contact-info,
+	form{
+		padding-top: 1em;
 	}
 }
