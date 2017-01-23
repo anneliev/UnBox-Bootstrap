@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'exo';
-  src: url("Fonts/exo-regular-webfont.woff2") format("woff2"), url("Fonts/exo-regular-webfont.woff") format("woff");
+  src: url("../Fonts/exo-regular-webfont.woff2") format("woff2"), url("../Fonts/exo-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'vollkorn';
-  src: url("Fonts/vollkorn-semibold-webfont.woff2") format("woff2"), url("Fonts/vollkorn-semibold-webfont.woff") format("woff");
+  src: url("../Fonts/vollkorn-semibold-webfont.woff2") format("woff2"), url("../Fonts/vollkorn-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -33,23 +33,23 @@ body{
 	margin-left: 5em;
 }
 .jumbotron{
-	background-image: url("../grafik/city_ljus.jpg");
+	background-image: url("../Grafik/city_ljus.jpg");
 	background-size: 100%;
 	background-position: center center;
 
 }
 .jumbotron h1{
-	font-size: 3.5em;
+	font-size: 4.8em;
 }
 .jumbotron h1,
 .jumbotron .row div p{
 	background-color: rgba(35, 50, 55, 0.4);
-	margin-top: 1.2em;
-	padding: 0.5em;
+	margin-top: 1.6em;
+	padding: 1.5em;
 	
 }
 .jumbotron .row div p{
-	font-size: 0.9em;
+	font-size: 1.9em;
 }
 .projects{
 	background-color: rgba(35, 50, 55, 0.4);
@@ -134,13 +134,23 @@ a:hover{
 		font-size: 0.8em;
 	}
 	.jumbotron h1{
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 	.jumbotron .row div p{
-		font-size: 0.7em;
+		font-size: 0.9em;
+		margin: 0;
 	}
 	.foot li{
 		margin-left: 0.3em;
 		margin-right: 0.3em;
+	}
+}
+@media (max-width: 769px){
+	.jumbotron h1{
+		font-size: 3.1em;
+	}
+	.jumbotron .row div p{
+		font-size: 1.4em;
+		margin: 0;
 	}
 }
