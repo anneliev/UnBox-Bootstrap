@@ -36,7 +36,17 @@ h3,
 h4{
 	color: $ub-font-color;
 	font-family: $ub-heading-font;
+}
+h1{
 	font-weight: 700;
+}
+h2{
+	font-size: 1.8em;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+h3{
+	font-size: 1.2em;
 }
 
 a,
@@ -59,9 +69,12 @@ label{
 .container{
 	padding: 0;
 }
-
-.navbar-default{
+.navbar-fixed-top{
 	background-color: $ub-grey-opacity;
+
+}
+.navbar-default{
+	background-color: transparent;
 	img{
 		float: left;
 		clear: both;
@@ -74,7 +87,9 @@ label{
 		width: initial;
 		float:left;
 		list-style: none;
-		margin-left: 1.5em;	
+		margin-left: 2.5em;	
+		margin-top: 0.7em;
+		margin-bottom: 0.2em;
 		a{
 			margin: 0.5em;
 			font-size: 0.8em;
@@ -86,12 +101,14 @@ label{
 	background-image: url("../Grafik/city_ljus.jpg");
 	background-size: 100%;
 	background-position: center center;
+	padding: 0;
 	h1{
 		background-color: $ub-grey-opacity;
 		color: $ub-font-color;
-		margin-top: 1.2em;
+		margin-top: 2.2em;
+		margin-bottom: 0;
 		font-size: 1.4em;
-		padding: 1.4em;
+		padding: 0.8em;
 		font-weight: 700;
 	}
  	.row{
@@ -111,12 +128,12 @@ label{
 	margin-bottom: 1em;
 	h3,
 	h4{
-		font-size: 1.1em;
+		font-size: 0.9em;
 		margin: 0;
 	}
 	div{
 		p{
-			font-size: 0.7em;
+			font-size: 0.8em;
 			margin: 0;
 			text-align:left;
 			margin-left: 1.2em;
@@ -174,20 +191,76 @@ label{
 footer{
 	background-color: $ub-blue;
 	padding-top:0.4em;
-	padding-bottom:0.4em;
-	li{
-		font-size: 1.2em;
-	}
+	padding-bottom:1.4em;
+	margin: 0;
 }
-.foot{
-	margin-top: 0em;
-	li{
-		font-size: 0.8em;
-		margin-left: 0.3em;
-		margin-right: 0.3em;
-		margin-bottom:0.5em;
-		a{
-			margin-left: 0em;
+	.foot{
+		li{
+			margin: 0;
+			padding-bottom: 0.5em;
+			a{
+				padding: 0.5em;
+				margin: 0;
+				font-size: 0.6em;
+			}
+		}
+	}
+
+
+@media (min-width: 427px) and (max-width: 768px){
+	.navbar-default img{
+		width: 12.5%;
+	}
+	.navbar-fixed-top{
+		font-size: 1.3em;
+		li{
+			margin-left: 8em;
+		}
+	}
+	.jumbotron{
+		h1{
+			font-size: 2.8em;
+		}
+		.row{
+			div{
+				margin-top: 0.8em;
+				margin-bottom: 0.8em;
+				p{
+					font-size: 1.1em;
+					margin: 0;
+				}
+			}
+		}		
+	}
+	.projects {
+		h3,
+		h4{
+			margin:0;
+			font-size: 1.2em;
+		}
+		div{
+			p{
+				font-size: 1.1em;
+				text-align: left;
+				margin-left: 4em;
+				margin-right: 2em;
+			}
+		}
+	}
+	.contact-info{
+		font-size: 1.2em;
+		p{
+			padding: 0.2em;
+		}
+	}
+	
+	.foot{
+		padding: 1em;
+		li{
+			a{
+				font-size: 1em;
+				margin-left: 2.5em;
+			}
 		}
 	}
 }
@@ -196,8 +269,9 @@ footer{
 	.navbar-default img{
 		width: 10%;
 	}
-	.nav-justified{
-		margin-top: 1.3em;
+	.navbar-fixed-top{
+		padding-top: 1em;
+		padding-bottom: 0.4em;
 		li{
 			a{
 				margin-left: 5em;
@@ -207,9 +281,9 @@ footer{
 	}
 	.jumbotron{ 
 		h1{
-			font-size: 3em;
+			font-size: 3.8em;
 			padding: 1em;
-			margin-top: 1.2em;
+			margin-top: 2.5em;
 		}
 		.row{
 			div{
@@ -221,62 +295,42 @@ footer{
 			}
 		}
 	}
+	h2{
+		font-size: 3em;
+	}
+	.projects {
+		h3,
+		h4{
+			margin-top:0.5em;;
+			font-size: 1.3em;
+		}
+		div{
+			p{
+				font-size: 1.1em;
+				text-align: left;
+				margin-left: 4em;
+				margin-right: 2em;
+			}
+		}
+	}
+	.clients{
+		h3{
+			font-size: 1.6em;
+		}
+	}
+	.about{
+		div{
+			font-size: 1.2em;
+		}
+	}
 	.foot{
+		padding: 0.7em;
 		li{
 			a{
-				margin-left: 0em;
+				font-size: 1.2em;
+				margin-left: 4em;
 			}
 		}
 	}
 }
 
-@media (min-width: 428px) and (max-width: 768px){
-	.navbar-default img{
-		width: 12.5%;
-	}
-	.jumbotron{
-		h1{
-			font-size: 2.8em;
-		}
-		.row{
-			div{
-			p{
-			font-size: 1.1em;
-			margin: 0;
-			}
-		}
-		}		
-	}
-	.projects {
-		h3,
-		h4{
-			margin:0;
-			font-size: 1.2em;
-		}
-		div{
-			p{
-			font-size: 1.1em;
-			text-align: left;
-			margin-left: 4em;
-			margin-right: 2em;
-			}
-		}
-	}
-	.contact-info{
-		font-size: 1.2em;
-		p{
-			padding: 0.2em;
-		}
-	}
-	.nav-justified{
-		font-size: 0.8em;
-	}
-}
-.foot{
-		li{
-			a{
-				margin-left: 0em;
-				font-size: 150%;
-			}
-		}
-	}
