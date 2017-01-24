@@ -1,0 +1,187 @@
+// imprting UnBox fonts
+@font-face {
+    font-family: 'exo';
+    src: url('../Fonts/exo-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/exo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vollkorn';
+    src: url('../Fonts/vollkorn-semibold-webfont.woff2') format('woff2'),
+         url('../Fonts/vollkorn-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables for fonts with fallback
+$ub-body-font: "exo", sans-serif;
+$ub-heading-font: "vollkorn", sans-serif;
+
+// UnBox colors
+$ub-body-bg: #000;
+$ub-font-color: #eac67a;
+$ub-red: #984B43;
+$ub-grey-opacity: rgba(35,50,55,0.4);
+$ub-darkgreen: #233237;
+$ub-blue: #18121e;
+
+body{
+	background-color: $ub-body-bg;
+}
+
+h1,
+h2,
+h3,
+h4{
+	color: $ub-font-color;
+	font-family: $ub-heading-font;
+	font-weight: 700;
+}
+
+a,
+p,
+label{
+	color: $ub-font-color;
+	font-family: $ub-body-font;
+	// margin: 1em 0 1em 0;
+}
+
+a:hover{
+	color: $ub-red;
+	text-decoration: none;
+}
+
+label{
+	font-weight:500;
+}
+
+footer{
+	font-size:0.9;
+	background-color:$ub-blue;
+}
+
+.comtainer{
+	padding: 0;
+}
+
+.navbar-default{
+	background-color: $ub-grey-opacity;
+	img{
+		float: left;
+		clear: both;
+		width: 10%;
+	}
+}
+
+.nav-justified{
+	margin-top: 1.3em;
+	li{
+		a{
+			margin-left: 5em;
+		}
+	}
+}
+
+.jumbotron{
+	background-image: url("../grafik/city_ljus.jpg");
+	background-size: 100%;
+	background-position: center center;
+	h1{
+		background-color: $ub-grey-opacity;
+		margin-top: 1.2em;
+		padding: 0.5em;
+		color: $ub-font-color;
+	}
+ 	.row{
+		div{
+			p{
+				font-size: 0.9em;
+				background-color: $ub-grey-opacity;
+				margin-top: 1.2em;
+				padding: 0.5em;
+			}
+		}
+	}
+}
+
+.projects{
+	background-color: $ub-grey-opacity;
+	picture{
+		img:hover{
+			-webkit-transition: all 1s ease;
+  			transition: all 1s ease;
+  			-webkit-transform: scale(2);
+  			transform: scale(2);
+		}
+	}
+}
+
+.clients{
+	picture{
+		img{
+			padding: 2em;
+			&:hover{
+				-webkit-transition: all 1.5s ease;
+    			transition: all 1.5s ease;
+    			-webkit-transform: rotate(360deg) scale(2);
+    			transform: rotate(360deg) scale(2);
+			}
+		}
+	}
+}
+
+.about{
+	background-color: $ub-grey-opacity;
+}
+
+@media (max-width: 427px){
+	.navbar-default img{
+		width: 20%;
+	}
+	.nav-justified{
+		li{
+			float:left;
+			list-style: none;
+			margin-left: 1.5em;	
+			a{
+			margin: 0.5em;
+			font-size: 0.8em;
+			}
+		}
+	}
+	.jumbotron{ 
+		h1{
+			font-size: 1.4em;
+		}
+		.row{
+			div{
+				p{
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+	.foot{ 
+		li{
+			margin-left: 0.3em;
+			margin-right: 0.3em;
+		}
+	}
+}
+
+@media (min-width: 428px) and (max-width: 769px){
+	.jumbotron{
+		h1{
+			font-size: 3.1em;
+		}
+	}
+	.row {
+		div{
+			p{
+			font-size: 1.4em;
+			margin: 0;
+			}
+		}
+	}
+}
