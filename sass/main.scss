@@ -55,13 +55,7 @@ a:hover{
 label{
 	font-weight:500;
 }
-
-footer{
-	font-size:0.9;
-	background-color:$ub-blue;
-}
-
-.comtainer{
+.container{
 	padding: 0;
 }
 
@@ -79,27 +73,28 @@ footer{
 	li{
 		a{
 			margin-left: 5em;
+			font-size: 1.5em;
 		}
 	}
 }
 
 .jumbotron{
-	background-image: url("../grafik/city_ljus.jpg");
+	background-image: url("../Grafik/city_ljus.jpg");
 	background-size: 100%;
 	background-position: center center;
 	h1{
 		background-color: $ub-grey-opacity;
 		margin-top: 1.2em;
-		padding: 0.5em;
+		padding: 1em;
 		color: $ub-font-color;
 	}
  	.row{
 		div{
 			p{
-				font-size: 0.9em;
+				font-size: 1.2em;
 				background-color: $ub-grey-opacity;
 				margin-top: 1.2em;
-				padding: 0.5em;
+				padding: 1em;
 			}
 		}
 	}
@@ -134,6 +129,43 @@ footer{
 .about{
 	background-color: $ub-grey-opacity;
 }
+.contact{
+	background-color: $ub-grey-opacity;
+	padding: 2em;
+}
+.contact-info{
+	font-size: 1.5em;
+}
+.form-control{
+	font-family:$ub-body-font;
+}
+.btn-primary{
+	background-color: $ub-red;
+  	color: $ub-font-color;
+  	font-family: $ub-body-font;
+  	font-size: 1.4em;
+  	border: none;
+  	border-radius: 30%;
+  	padding: 0.5em;
+}
+.btn-primary:hover{
+	background-color: $ub-darkgreen;
+}
+footer{
+	background-color: $ub-blue;
+	padding-top:0.4em;
+	padding-bottom:0.4em;
+	li{
+		font-size: 1.2em;
+	}
+}
+.foot{
+	li{
+		a{
+			margin-left: 0em;
+		}
+	}
+}
 
 @media (max-width: 427px){
 	.navbar-default img{
@@ -153,6 +185,8 @@ footer{
 	.jumbotron{ 
 		h1{
 			font-size: 1.4em;
+			font-weight: 700;
+			padding: 1.4em;
 		}
 		.row{
 			div{
@@ -163,25 +197,72 @@ footer{
 		}
 	}
 	.foot{ 
+		margin-top: 0em;
 		li{
+			font-size: 0.8em;
 			margin-left: 0.3em;
 			margin-right: 0.3em;
+			margin-bottom:0.5em;
+
+			
 		}
 	}
+	.projects{
+		h3,
+		h4{
+		font-size: 1.1em;
+		margin: 0;
+		}
+		margin-bottom: 1em;
+			div{
+				p{
+					font-size: 0.7em;
+					margin: 0;
+					text-align:left;
+					margin-left: 1.2em;
+				}
+			}
+		}
+	
 }
 
 @media (min-width: 428px) and (max-width: 769px){
 	.jumbotron{
 		h1{
-			font-size: 3.1em;
+			font-size: 2.8em;
 		}
-	}
-	.row {
-		div{
+		.row{
+			div{
 			p{
-			font-size: 1.4em;
+			font-size: 1.1em;
 			margin: 0;
 			}
 		}
+		}		
+	}
+	
+	.projects {
+		h3,
+		h4{
+			margin:0;
+			font-size: 1.2em;
+		}
+		div{
+			p{
+			font-size: 1.1em;
+			text-align: left;
+			margin-left: 4em;
+			margin-right: 2em;
+			}
+		}
+	}
+	.contact-info{
+		font-size: 1.2em;
+		p{
+			padding: 0.2em;
+		}
+	}
+	.nav-justified{
+		font-size: 0.8em;
 	}
 }
