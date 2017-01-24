@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'exo';
+  src: url("../Fonts/exo-regular-webfont.woff2") format("woff2"), url("../Fonts/exo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'vollkorn';
+  src: url("../Fonts/vollkorn-semibold-webfont.woff2") format("woff2"), url("../Fonts/vollkorn-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: #000; }
+
+h1,
+h2,
+h3,
+h4 {
+  color: #eac67a;
+  font-family: "vollkorn", sans-serif;
+  font-weight: 700; }
+
+a,
+p,
+label {
+  color: #eac67a;
+  font-family: "exo", sans-serif; }
+
+a:hover {
+  color: #984B43;
+  text-decoration: none; }
+
+label {
+  font-weight: 500; }
+
+.container {
+  padding: 0; }
+
+.navbar-default {
+  background-color: rgba(35, 50, 55, 0.4); }
+  .navbar-default img {
+    float: left;
+    clear: both;
+    width: 10%; }
+
+.nav-justified {
+  margin-top: 1.3em; }
+  .nav-justified li a {
+    margin-left: 5em;
+    font-size: 1.5em; }
+
+.jumbotron {
+  background-image: url("../grafik/city_ljus.jpg");
+  background-size: 100%;
+  background-position: center center; }
+  .jumbotron h1 {
+    background-color: rgba(35, 50, 55, 0.4);
+    margin-top: 1.2em;
+    padding: 1em;
+    color: #eac67a; }
+  .jumbotron .row div p {
+    font-size: 1.2em;
+    background-color: rgba(35, 50, 55, 0.4);
+    margin-top: 1.2em;
+    padding: 1em; }
+
+.projects {
+  background-color: rgba(35, 50, 55, 0.4); }
+  .projects picture img:hover {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+
+.clients picture img {
+  padding: 2em; }
+  .clients picture img:hover {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2); }
+
+.about {
+  background-color: rgba(35, 50, 55, 0.4); }
+
+.contact {
+  background-color: rgba(35, 50, 55, 0.4);
+  padding: 2em; }
+
+.contact-info {
+  font-size: 1.5em; }
+
+.form-control {
+  font-family: "exo", sans-serif; }
+
+.btn-primary {
+  background-color: #984B43;
+  color: #eac67a;
+  font-family: "exo", sans-serif;
+  font-size: 1.4em;
+  border: none;
+  border-radius: 30%;
+  padding: 0.5em; }
+
+.btn-primary:hover {
+  background-color: #233237; }
+
+footer {
+  background-color: #18121e;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em; }
+  footer li {
+    font-size: 1.2em; }
+
+.foot li a {
+  margin-left: 0em; }
+
+@media (max-width: 427px) {
+  .navbar-default img {
+    width: 20%; }
+
+  .nav-justified li {
+    float: left;
+    list-style: none;
+    margin-left: 1.5em; }
+    .nav-justified li a {
+      margin: 0.5em;
+      font-size: 0.8em; }
+
+  .jumbotron h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 1.4em; }
+  .jumbotron .row div p {
+    font-size: 0.7em; }
+
+  .foot {
+    margin-top: 0em; }
+    .foot li {
+      font-size: 0.8em;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      margin-bottom: 0.5em; }
+
+  .projects {
+    margin-bottom: 1em; }
+    .projects h3,
+    .projects h4 {
+      font-size: 1.1em;
+      margin: 0; }
+    .projects div p {
+      font-size: 0.7em;
+      margin: 0;
+      text-align: left;
+      margin-left: 1.2em; } }
+@media (min-width: 428px) and (max-width: 769px) {
+  .jumbotron h1 {
+    font-size: 2.8em; }
+  .jumbotron .row div p {
+    font-size: 1.1em;
+    margin: 0; }
+
+  .projects h3,
+  .projects h4 {
+    margin: 0;
+    font-size: 1.2em; }
+  .projects div p {
+    font-size: 1.1em;
+    text-align: left;
+    margin-left: 4em;
+    margin-right: 2em; }
+
+  .contact-info {
+    font-size: 1.2em; }
+    .contact-info p {
+      padding: 0.2em; }
+
+  .nav-justified {
+    font-size: 0.8em; } }
+
+/*# sourceMappingURL=main.css.map */

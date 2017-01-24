@@ -1,0 +1,268 @@
+// imprting UnBox fonts
+@font-face {
+    font-family: 'exo';
+    src: url('../Fonts/exo-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/exo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vollkorn';
+    src: url('../Fonts/vollkorn-semibold-webfont.woff2') format('woff2'),
+         url('../Fonts/vollkorn-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables for fonts with fallback
+$ub-body-font: "exo", sans-serif;
+$ub-heading-font: "vollkorn", sans-serif;
+
+// UnBox colors
+$ub-body-bg: #000;
+$ub-font-color: #eac67a;
+$ub-red: #984B43;
+$ub-grey-opacity: rgba(35,50,55,0.4);
+$ub-darkgreen: #233237;
+$ub-blue: #18121e;
+
+body{
+	background-color: $ub-body-bg;
+}
+
+h1,
+h2,
+h3,
+h4{
+	color: $ub-font-color;
+	font-family: $ub-heading-font;
+	font-weight: 700;
+}
+
+a,
+p,
+label{
+	color: $ub-font-color;
+	font-family: $ub-body-font;
+	// margin: 1em 0 1em 0;
+}
+
+a:hover{
+	color: $ub-red;
+	text-decoration: none;
+}
+
+label{
+	font-weight:500;
+}
+.container{
+	padding: 0;
+}
+
+.navbar-default{
+	background-color: $ub-grey-opacity;
+	img{
+		float: left;
+		clear: both;
+		width: 10%;
+	}
+}
+
+.nav-justified{
+	margin-top: 1.3em;
+	li{
+		a{
+			margin-left: 5em;
+			font-size: 1.5em;
+		}
+	}
+}
+
+.jumbotron{
+	background-image: url("../grafik/city_ljus.jpg");
+	background-size: 100%;
+	background-position: center center;
+	h1{
+		background-color: $ub-grey-opacity;
+		margin-top: 1.2em;
+		padding: 1em;
+		color: $ub-font-color;
+	}
+ 	.row{
+		div{
+			p{
+				font-size: 1.2em;
+				background-color: $ub-grey-opacity;
+				margin-top: 1.2em;
+				padding: 1em;
+			}
+		}
+	}
+}
+
+.projects{
+	background-color: $ub-grey-opacity;
+	picture{
+		img:hover{
+			-webkit-transition: all 1s ease;
+  			transition: all 1s ease;
+  			-webkit-transform: scale(2);
+  			transform: scale(2);
+		}
+	}
+}
+
+.clients{
+	picture{
+		img{
+			padding: 2em;
+			&:hover{
+				-webkit-transition: all 1.5s ease;
+    			transition: all 1.5s ease;
+    			-webkit-transform: rotate(360deg) scale(2);
+    			transform: rotate(360deg) scale(2);
+			}
+		}
+	}
+}
+
+.about{
+	background-color: $ub-grey-opacity;
+}
+.contact{
+	background-color: $ub-grey-opacity;
+	padding: 2em;
+}
+.contact-info{
+	font-size: 1.5em;
+}
+.form-control{
+	font-family:$ub-body-font;
+}
+.btn-primary{
+	background-color: $ub-red;
+  	color: $ub-font-color;
+  	font-family: $ub-body-font;
+  	font-size: 1.4em;
+  	border: none;
+  	border-radius: 30%;
+  	padding: 0.5em;
+}
+.btn-primary:hover{
+	background-color: $ub-darkgreen;
+}
+footer{
+	background-color: $ub-blue;
+	padding-top:0.4em;
+	padding-bottom:0.4em;
+	li{
+		font-size: 1.2em;
+	}
+}
+.foot{
+	li{
+		a{
+			margin-left: 0em;
+		}
+	}
+}
+
+@media (max-width: 427px){
+	.navbar-default img{
+		width: 20%;
+	}
+	.nav-justified{
+		li{
+			float:left;
+			list-style: none;
+			margin-left: 1.5em;	
+			a{
+			margin: 0.5em;
+			font-size: 0.8em;
+			}
+		}
+	}
+	.jumbotron{ 
+		h1{
+			font-size: 1.4em;
+			font-weight: 700;
+			padding: 1.4em;
+		}
+		.row{
+			div{
+				p{
+					font-size: 0.7em;
+				}
+			}
+		}
+	}
+	.foot{ 
+		margin-top: 0em;
+		li{
+			font-size: 0.8em;
+			margin-left: 0.3em;
+			margin-right: 0.3em;
+			margin-bottom:0.5em;
+
+			
+		}
+	}
+	.projects{
+		h3,
+		h4{
+		font-size: 1.1em;
+		margin: 0;
+		}
+		margin-bottom: 1em;
+			div{
+				p{
+					font-size: 0.7em;
+					margin: 0;
+					text-align:left;
+					margin-left: 1.2em;
+				}
+			}
+		}
+	
+}
+
+@media (min-width: 428px) and (max-width: 769px){
+	.jumbotron{
+		h1{
+			font-size: 2.8em;
+		}
+		.row{
+			div{
+			p{
+			font-size: 1.1em;
+			margin: 0;
+			}
+		}
+		}		
+	}
+	
+	.projects {
+		h3,
+		h4{
+			margin:0;
+			font-size: 1.2em;
+		}
+		div{
+			p{
+			font-size: 1.1em;
+			text-align: left;
+			margin-left: 4em;
+			margin-right: 2em;
+			}
+		}
+	}
+	.contact-info{
+		font-size: 1.2em;
+		p{
+			padding: 0.2em;
+		}
+	}
+	.nav-justified{
+		font-size: 0.8em;
+	}
+}

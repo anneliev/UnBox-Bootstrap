@@ -11,9 +11,9 @@
 
 body{
 	background-color: #000;
-	color: #eac67a;
-	font-family: "exo";
-	border: none;
+}
+.container{
+	padding: 0;
 }
 .navbar-default img{
 	float:left;
@@ -21,9 +21,7 @@ body{
 	width: 10%;
 }
 .navbar-default{
-	font-size: 1.1em;
 	background-color: rgba(35, 50, 55, 0.4);
-	color: #eac67a;
 }
 .nav-justified{
 	margin-top: 1.3em;
@@ -46,7 +44,7 @@ body{
 	background-color: rgba(35, 50, 55, 0.4);
 	margin-top: 1.6em;
 	padding: 1.5em;
-	
+	color: #eac67a;
 }
 .jumbotron .row div p{
 	font-size: 1.9em;
@@ -54,11 +52,26 @@ body{
 .projects{
 	background-color: rgba(35, 50, 55, 0.4);
 }
+.projects picture img:hover{
+	-webkit-transition: all 1s ease;
+  	transition: all 1s ease;
+  	-webkit-transform: scale(2);
+  	transform: scale(2); 
+}
 .clients picture img{
 	padding: 2em;
 }
+.clients picture img:hover {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2); 
+}
 .about{
 	background-color: rgba(35, 50, 55, 0.4);
+}
+label{
+	font-weight: 500;
 }
 .contact{
 	background-color: rgba(35, 50, 55, 0.4);
@@ -75,8 +88,8 @@ body{
   	border-radius: 30%;
   	padding: 0.5em;
 }
-.navbar {
-	margin: 0;
+.btn-primary:hover{
+	background-color: #233237;
 }
 footer{
 	font-size: 0.9em;
@@ -85,35 +98,20 @@ footer{
 .foot li a{
 	margin: 0;
 }
-.projects picture img:hover{
-	-webkit-transition: all 1s ease;
-  	transition: all 1s ease;
-  	-webkit-transform: scale(2);
-  	transform: scale(2); 
-}
-.clients picture img:hover {
-    -webkit-transition: all 1.5s ease;
-    transition: all 1.5s ease;
-    -webkit-transform: rotate(360deg) scale(2);
-    transform: rotate(360deg) scale(2); 
-}
 h1,
 h2,
 h3,
 h4{
+	color: #eac67a;
 	font-family: "vollkorn";
 	font-weight: 700;
-		
-}
-h1{
-	font-size: 1.5em;
 }
 a,
+label,
 p{
 	color: #eac67a;
-}
-label{
-	font-weight: 500;
+	font-family: "exo";
+/*	margin: 1em 0 0 0;*/
 }
 a:hover{
 	color: #984B43;
@@ -126,7 +124,6 @@ a:hover{
 	.nav-justified li{
 		float:left;
 		list-style: none;
-		
 		margin-left: 1.5em;
 	}
 	.nav-justified li a{
@@ -146,7 +143,7 @@ a:hover{
 		margin-right: 0.3em;
 	}
 }
-@media (min-width: 428px) and (max-width: 768px){
+@media (min-width: 428px) and (max-width: 769px){
 	.jumbotron h1{
 		font-size: 3.1em;
 	}
@@ -159,4 +156,3 @@ a:hover{
 		padding-top: 1em;
 	}
 }
-
