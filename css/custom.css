@@ -134,11 +134,11 @@ a:hover{
 		font-size: 0.8em;
 	}
 	.jumbotron h1{
-		font-size: 1.6em;
-		padding-top: 2em;
+		font-size: 1.5em;
+		padding-top: 0.5em;
 	}
 	.jumbotron .row div p{
-		font-size: 0.9em;
+		font-size: 0.8em;
 		margin: 0;
 	}
 	.foot li{
