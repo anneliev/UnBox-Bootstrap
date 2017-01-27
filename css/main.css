@@ -1,3 +1,4 @@
+/* imprting UnBox fonts*/
 @font-face {
   font-family: 'exo';
   src: url("../Fonts/exo-regular-webfont.woff2") format("woff2"), url("../Fonts/exo-regular-webfont.woff") format("woff");
@@ -8,6 +9,8 @@
   src: url("../Fonts/vollkorn-semibold-webfont.woff2") format("woff2"), url("../Fonts/vollkorn-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+/* Variables for fonts with fallback*/
+/* UnBox colors*/
 body {
   background-color: #000; }
 
@@ -33,7 +36,8 @@ a,
 p,
 label {
   color: #eac67a;
-  font-family: "exo", sans-serif; }
+  font-family: "exo", sans-serif;
+  /* margin: 1em 0 1em 0;*/ }
 
 a:hover {
   color: #984B43;
@@ -138,8 +142,6 @@ label {
 
 footer {
   background-color: #18121e;
-  padding-top: 0.4em;
-  padding-bottom: 1.4em;
   margin: 0; }
 
 .foot li {
@@ -156,8 +158,12 @@ footer {
 
   .navbar-fixed-top {
     font-size: 1.3em; }
-    .navbar-fixed-top li {
-      margin-left: 8em; }
+
+  .nav-justified li {
+    width: 1%;
+    float: none; }
+    .nav-justified li a {
+      margin-left: 2.5em; }
 
   .jumbotron h1 {
     font-size: 2.8em; }
@@ -184,10 +190,10 @@ footer {
       padding: 0.2em; }
 
   .foot {
-    padding: 1em; }
+    padding-top: 1em; }
     .foot li a {
       font-size: 1em;
-      margin-left: 2.5em; } }
+      margin-left: 0; } }
 @media (min-width: 769px) {
   .navbar-default img {
     width: 10%; }
@@ -198,6 +204,10 @@ footer {
     .navbar-fixed-top li a {
       margin-left: 5em;
       font-size: 1.5em; }
+
+  .nav-justified li {
+    width: 1%;
+    float: none; }
 
   .jumbotron h1 {
     font-size: 3.8em;
